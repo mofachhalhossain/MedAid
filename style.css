@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(68, 134, 145, 0.9),
+      rgba(134, 62, 134, 0.9)
+    ),
+    url(image/backgroundImg.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  padding: 2.4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 14px;
+  color: aliceblue;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul li {
+  font-size: 13px;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 8px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffff;
+  display: block;
+  margin-left: 7px;
+  transition: 0.6s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
